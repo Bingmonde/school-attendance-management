@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "952290383027",
+    "project_id": "gestion456bing",
+    "storage_bucket": "gestion456bing.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:952290383027:android:781deab205933921144cc6",
+        "android_client_info": {
+          "package_name": "ca.alaurent.bingqing.gestionpresence"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnMKsUxtfQaMu4uW_G56T4vCNaKeKrpT4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
