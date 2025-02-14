@@ -1,4 +1,4 @@
-import 'dart:js_interop';
+// import 'dart:js_interop';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
@@ -39,17 +39,13 @@ class _PresencesManagementState extends State<PresencesManagement> {
     adminProfService = Provider.of<AdminProfProvider>(context, listen: false);
     userInfo = Provider.of<LoginInfo>(context, listen: false);
 
-    // if (adminProfService.classes.isEmpty) {
-    //   adminProfService.getMesClasses(userInfo.user_uid);
-    // }
-    //adminProfService.getMesClasses(userInfo.user_uid);
+
     _selectedClassIndex = 2;
     _selectedClass = getClassId(adminProfService.classes[_selectedClassIndex]);
     courseDates = getClassDates(_selectedClass);
     _selectedDate = selectClassDateByDefault(courseDates);
     _students = [...adminProfService.classes[_selectedClassIndex].students];
     print(_students);
-    //print(adminProfService.classes[_selectedClassIndex].students);
   }
 
 // fonction utilitaire

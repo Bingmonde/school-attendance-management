@@ -96,7 +96,7 @@ class _AuthFormWidgetState extends State<AuthFormWidget> {
               obscureText: true,
               validator: (val) {
                 if (val!.isEmpty || val.length < 8) {
-                  return 'Au moins 7 caracteres.';
+                  return 'Au moins 8 caracteres.';
                 }
                 return null;
               },
@@ -135,8 +135,7 @@ class _AuthFormWidgetState extends State<AuthFormWidget> {
             if (!_isLogin)
               TextFormField(
                 decoration: InputDecoration(labelText: "Nom"),
-                key: ValueKey(
-                    "FamilyName"), 
+                key: ValueKey("FamilyName"),
                 validator: (val) {
                   if (val!.isEmpty) {
                     return 'Entrez votre nom.';

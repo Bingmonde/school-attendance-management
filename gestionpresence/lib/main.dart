@@ -32,7 +32,6 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    //FirebaseAuth.instance.signOut();
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_) => CalendrierProvider()),
@@ -41,20 +40,6 @@ class MainApp extends StatelessWidget {
       ],
       child: MaterialApp(
         title: 'Gestion de présence ',
-        // theme: ThemeData(
-        //   colorScheme: ColorScheme.fromSeed(
-        //     seedColor: Colors.teal,
-        //   ),
-        //   elevatedButtonTheme: ElevatedButtonThemeData(
-        //     style: ElevatedButton.styleFrom(
-        //       foregroundColor: Colors.amber,
-        //       backgroundColor: Colors.black,
-        //       shape: RoundedRectangleBorder(
-        //         borderRadius: BorderRadius.circular(20),
-        //       ),
-        //     ),
-        //   ),
-        // ),
         routes: {
           PageAcceuil.routeName: (context) => const PageAcceuil(),
           PageCalendrier.routeName: (context) => const PageCalendrier(),
